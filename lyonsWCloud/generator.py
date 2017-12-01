@@ -162,10 +162,10 @@ class WCTopWords(object):
         wc.to_file(path.join(d, "templates/wcloud.png"))
 
         # matplotlib is causing RuntimeError due to python installation issues locally
-        # if render_to_screen:
-        #     plt.imshow(wc, interpolation='bilinear')
-        #     plt.axis("off")
-        #     plt.show()
+        if render_to_screen:
+            plt.imshow(wc, interpolation='bilinear')
+            plt.axis("off")
+            plt.show()
 
 
 
